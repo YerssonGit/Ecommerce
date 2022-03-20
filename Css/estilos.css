@@ -1,0 +1,92 @@
+* {
+    margin: 3px;
+    padding: 3px;
+    /*
+    border: 3px solid purple;
+    */
+}
+
+header {
+    border: 3px dashed purple;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .icon-cart {
+    border: 3px solid red;
+    font-size: 30px;
+}
+
+header h1 {
+    border: 3px solid blue;
+}
+
+nav {
+    display: flex;
+    padding: 1px;
+    border: 3px dashed black;
+}
+
+nav ol {
+    width: 100%;
+    height: auto;
+    padding: auto;
+    margin: 0;
+    display: flex;
+    list-style: none;
+    border: 3px double darkred;
+}
+
+nav ol li {
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    border: 3px ridge darkgoldenrod;
+}
+
+nav ol li a {
+    margin: auto;
+    padding: 0;
+    border: 3px double darkgreen;
+    font-size: 100%;
+    text-align: center;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    border: 3px dashed blue;
+}
+
+section article {
+    display: flex;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2;
+    padding: 0;
+    border: 3px double darkgoldenrod;
+}
+
+section article img {
+    >max-width: 45%;
+    border: 3px double darkolivegreen;
+}
+
+section article .datos-Articulos {
+    border: 3px double darkorchid;
+    text-align: center;
+}
+
+section article .datos-Articulos p {
+    border: 3px double black;
+}
+
+section article .datos-Articulos a {
+    width: 100%;
+    border: 3px whe black;
+}
+
+footer {
+    border: 3px dashed red;
+}
