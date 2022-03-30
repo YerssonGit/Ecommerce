@@ -1,6 +1,7 @@
 * {
-  margin: 1px;
-  padding: 1px;
+  color: #000000;
+  margin: 0px;
+  padding: 0px;
   list-style: none;
   /*
     border: 3px solid purple;
@@ -21,46 +22,70 @@ header .icon-cart {
 header h1 {
   border: 3px solid blue;
 }
-
+/*Navegacion*/
 nav {
   display: flex;
-  padding: 1px;
+  background: #88f8;
   border: 3px dashed black;
+  position: sticky;
+  top: 0;
 }
-
-nav ol {
-  width: 100%;
-  height: auto;
-  padding: auto;
-  margin: 0;
+nav * {
+  font-size: 1.5rem;
+}
+a {
+  text-decoration: none;
+  display: block;
+}
+.nav_elemtos {
   display: flex;
-  list-style: none;
+  width: 100%;
+  background: #8f88;
+  justify-content: space-around;
   border: 3px double darkred;
 }
 
-nav ol li {
-  justify-content: space-between;
-  margin: auto;
-  display: flex;
+.nav_elemento a {
+  width: max-content;
+  padding: 5% 8%;
   border: 3px ridge darkgoldenrod;
 }
-
-nav ol li a {
-  margin: auto;
-  padding: 0;
-  border: 3px double darkgreen;
-  font-size: 100%;
-  text-align: center;
+.nav_elemento a:hover {
+  background-color: blue;
 }
 
+.nav_subelementos {
+  /* border: 9px double black;*/
+  display: none;
+  position: absolute;
+}
+
+.nav_elemento:hover > ol {
+  display: block;
+}
+.nav_subelemento a {
+  min-width: 200px;
+  background-color: #f888;
+  border: 3px double darkgreen;
+}
+
+.nav_subelemento a:hover {
+  background-color: #f00;
+}
+
+/*Seccion se articulos*/
 section {
+  margin: auto 1vw;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   border: 3px dashed blue;
 }
-
+section * {
+  font-size: 1.1em;
+}
 section article {
+  margin: 1vw;
   display: flex;
   justify-content: space-evenly;
   margin: 2;
@@ -91,5 +116,6 @@ section article .valor_articulo {
 }
 
 footer {
+  height: 20vh;
   border: 3px dashed red;
 }
