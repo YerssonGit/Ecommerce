@@ -13,14 +13,42 @@ header {
   display: flex;
   justify-content: space-between;
 }
-
+header .menu_moviles {
+  border: 3px solid red;
+  display: none;
+}
 header .icon-cart {
   border: 3px solid red;
   font-size: 30px;
+  margin: 2vh 10vw;
 }
-
 header h1 {
   border: 3px solid blue;
+  margin: 2vh 6vw;
+}
+/*Header moviles*/
+@media (max-width: 950px) {
+  header .menu_moviles {
+    border: 3px solid red;
+    display: flex;
+  }
+  header .icon-menu3 {
+    border: 3px solid pink;
+    font-size: 30px;
+    margin: 2vh 0vw;
+  }
+  header .icon-menu4 {
+    display: none;
+    font-size: 30px;
+    margin: 2vh 0vw;
+  }
+  header .menu_moviles:hover > .icon-menu3 {
+    display: none;
+  }
+  header .menu_moviles:hover > .icon-menu4 {
+    border: 3px solid green;
+    display: flex;
+  }
 }
 /*Navegacion*/
 nav {
@@ -47,7 +75,7 @@ a {
 
 .nav_elemento a {
   width: max-content;
-  padding: 5% 8%;
+  padding: 2vh 2vw;
   border: 3px ridge darkgoldenrod;
 }
 .nav_elemento a:hover {
@@ -72,7 +100,16 @@ a {
 .nav_subelemento a:hover {
   background-color: #f00;
 }
-
+/*Navegacion Moviles*/
+@media (max-width: 950px) {
+  .nav_elemtos {
+    display: none;
+  }
+  header .nav_elemento,
+  .menu_moviles:hover {
+    display: flex;
+  }
+}
 /*Seccion se articulos*/
 section {
   margin: auto 1vw;
