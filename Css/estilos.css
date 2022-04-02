@@ -1,198 +1,222 @@
 * {
-    color: #000000;
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
-    /*
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  color: #fff;
+  /*
     border: 3px solid purple;
     */
 }
-
-
+html {
+  background: rgb(0, 0, 0);
+}
 /*Header*/
 
 header {
-    border: 3px dashed purple;
-    display: flex;
-    justify-content: space-between;
+  background: #db2527;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
 }
 
 header .icon-cart {
-    border: 3px solid red;
-    font-size: 30px;
-    margin: 2vh 10vw;
+  font-size: 30px;
+  margin: 2vh 10vw;
 }
 
 header h1 {
-    border: 3px solid blue;
-    margin: 2vh 6vw;
+  margin: 2vh 6vw;
 }
-
 
 /*Navegacion*/
 
 nav {
-    display: flex;
-    background: #88f8;
-    border: 3px dashed black;
-    position: sticky;
-    top: 0;
-}
-
-header .menu_moviles {
-    border: 3px solid blue;
-    display: none;
+  display: flex;
+  background-color: #1a2cdb;
+  position: sticky;
+  top: 0;
 }
 
 nav .menu_moviles {
-    border: 3px solid red;
-    display: none;
+  display: none;
 }
 
 nav * {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 a {
-    text-decoration: none;
-    display: block;
+  text-decoration: none;
+  display: block;
 }
 
 .nav_elemtos {
-    display: flex;
-    width: 100%;
-    background: #8f88;
-    justify-content: space-around;
-    border: 3px double darkred;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
 }
 
 .nav_elemento a {
-    width: max-content;
-    padding: 2vh 2vw;
-    border: 3px ridge darkgoldenrod;
+  width: max-content;
+  padding: 2vh 2vw;
 }
 
 .nav_elemento a:hover {
-    background-color: blue;
+  background-color: rgb(140, 18, 18);
 }
 
 .nav_subelementos {
-    /* border: 9px double black;*/
-    display: none;
-    position: absolute;
+  text-align: center;
+  background: #fff;
+  border-bottom-left-radius: 30px;
+  display: none;
+  position: absolute;
 }
 
-.nav_elemento:hover>ol {
-    display: block;
+.nav_subelementos a {
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #fff;
+  border-bottom-left-radius: 30px;
+}
+
+.nav_elemento:hover > ol {
+  display: block;
 }
 
 .nav_subelemento a {
-    min-width: 200px;
-    background-color: #f888;
-    border: 3px double darkgreen;
+  min-width: 200px;
+  background-color: rgb(1, 23, 37);
 }
 
 .nav_subelemento a:hover {
-    background-color: #f00;
+  background-color: #f00;
 }
-
-
-/*Navegacion Moviles*/
-
-@media (max-width: 950px) {
-    header h1 {
-        margin-left: 70px;
-    }
-    nav {
-        width: 60px;
-        position: absolute;
-        float: left;
-    }
-    .nav_elemtos {
-        display: none;
-    }
-    header .nav_elemento,
-    .menu_moviles:hover {
-        display: flex;
-    }
-    nav .menu_moviles {
-        border: 3px solid red;
-        display: flex;
-    }
-    nav .icon-menu3 {
-        border: 3px solid pink;
-        font-size: 30px;
-        margin: 2vh 0vw;
-    }
-    nav .icon-menu4 {
-        display: none;
-        font-size: 30px;
-        margin: 2vh 0vw;
-    }
-    nav:hover {
-        border: 3px solid green;
-    }
-    nav:hover .icon-menu4 {
-        border: 3px solid darkcyan;
-        display: flex;
-    }
-    nav:hover .icon-menu3 {
-        border: 3px solid darkcyan;
-        display: none;
-    }
-    nav:hover .nav_subelemento {
-        border: 3px solid darkcyan;
-        display: flex;
-    }
-}
-
 
 /*Seccion se articulos*/
 
 section {
-    margin: auto 1vw;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    border: 3px dashed blue;
+  margin: auto 1.5vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
 }
 
 section * {
-    font-size: 1.1em;
+  font-size: 1.1em;
 }
 
 section article {
-    margin: 1vw;
-    display: flex;
-    justify-content: space-evenly;
-    margin: 2;
-    padding: 0;
-    border: 3px double darkgoldenrod;
+  margin: 1vw;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2;
+  padding: 0;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    165deg,
+    rgba(131, 58, 180, 1) 80%,
+    rgba(253, 29, 29, 1) 85%,
+    rgba(252, 176, 69, 0.6) 100%
+  );
 }
 
 section article img {
-    width: 60%;
-    border: 3px double darkolivegreen;
-}
-
-section article .nombre_articulo {
-    width: 60%;
-    border: 3px double darkorchid;
-    text-align: center;
+  width: 60%;
 }
 
 section article .datos-Articulos {
-    border: 3px double black;
-    height: 15%;
-    text-align: right;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
-section article .valor_articulo {
-    width: 100%;
-    border: 3px whe black;
+section article .nombre_articulo {
+  text-align: center;
+}
+
+section article .dato-Articulo {
+  text-align: right;
+}
+
+section article .valor_articulo:hover {
+  background: #0008;
 }
 
 footer {
-    height: 20vh;
-    border: 3px dashed red;
+  height: 20vh;
+  background: rgb(0, 0, 0);
+}
+
+@media (max-width: 950px) {
+  header h1 {
+    margin-left: 80px;
+  }
+  nav {
+    background: #db2527;
+    height: 61px;
+    width: 60px;
+    position: fixed;
+    display: flex;
+  }
+  nav div span {
+    color: #fff;
+  }
+  .nav_elemtos {
+    display: none;
+  }
+
+  nav .menu_moviles {
+    height: 61px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+  }
+  nav .icon-menu3 {
+    font-size: 30px;
+    margin: 2vh 2vw;
+  }
+  nav .icon-menu4 {
+    display: none;
+    font-size: 30px;
+    margin: 2vh 2vw;
+  }
+  nav:hover {
+    width: max-content;
+    height: max-content;
+    display: flex;
+  }
+  nav:hover * {
+    color: white;
+  }
+  nav:hover .menu_moviles {
+    display: flex;
+    height: 61px;
+    width: 60px;
+    justify-content: center;
+  }
+  nav:hover .icon-menu4 {
+    display: flex;
+    float: top;
+  }
+  nav:hover .icon-menu3 {
+    display: none;
+  }
+  nav:hover .nav_elemtos {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav_elemento {
+    position: relative;
+  }
+
+  .nav_subelementos {
+    top: 0;
+    right: -230px;
+  }
+
+  section {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
